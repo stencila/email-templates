@@ -1,0 +1,75 @@
+<mjml lang="en">
+  <mj-include path="./_partials/_header.mjml" />
+
+  <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
+    <mj-section padding="24px 0 16px 0" full-width="full-width">
+      <mj-group>
+        <mj-column padding="0" width="75%">
+          <mj-image align="left" src="./assets/stencilaLogo.svg" title="Stencila Logo" alt="Stencila" width="140px" padding="0" target="#" />
+        </mj-column>
+
+        <mj-column width="25%" padding="0">
+          <mj-text color="#707070" align="right" text-transform="uppercase" font-size="10px" letter-spacing="1px" padding="8px 0">
+            <a href="#" style="text-decoration: none;">View Online</a>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
+      <mj-section padding="0">
+        <mj-column width="100%" padding="0">
+          <mj-text align="left" padding="0">
+            <h6>You’re Almost done signing up for</h6>
+            <h1>Next generation of reproducible, living documents.</h1>
+          </mj-text>
+
+          <mj-button padding="16px 0">
+            Confirm Account
+          </mj-button>
+
+          <mj-text align="left" padding="0">
+            <p>
+              Welcome to Stencila {{USERNAME}}!
+            </p>
+
+            <p>
+              To finish creating your account, we just need to verify your email address: {{email@stenci.la}}.
+            </p>
+            <p>
+              Please <a href="#">click here</a> to finish creating your account.
+            </p>
+            <p>
+              We’re excited to have you!<br />
+              Team Stencila<br />
+              💖
+            </p>
+
+            <h2>Heading 2</h2>
+            <p>
+              To finish creating your account, we just need to verify your email address: {{email@stenci.la}}.
+            </p>
+            <h3>Heading 3</h3>
+            <p>
+              To finish creating your account, we just need to verify your email address: {{email@stenci.la}}.
+            </p>
+            <h4>Heading 4</h4>
+            <p>
+              To finish creating your account, we just need to verify your email address: {{email@stenci.la}}.
+            </p>
+            <h5>Heading 5</h5>
+            <p>
+              To finish creating your account, we just need to verify your email address: {{email@stenci.la}}.
+            </p>
+            <h6>Heading 6</h6>
+            <p>
+              To finish creating your account, we just need to verify your email address: {{email@stenci.la}}.
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="./_partials/_footer.mjml" />
+  </mj-body>
+</mjml>

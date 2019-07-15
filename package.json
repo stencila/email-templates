@@ -1,0 +1,30 @@
+{
+  "name": "@stencila/email-templates",
+  "version": "0.1.0",
+  "description": "Stencila branded email templates",
+  "main": "src/registration.mjml",
+  "scripts": {
+    "prep": "npm run ensureDir && npm run clean",
+    "build": "npm run prep && mjml src/*.mjml -o ./dist --config.minify true",
+    "clean": "rimraf ./dist/*",
+    "dev": "npm run prep && mjml -w src/*.mjml -o ./dist",
+    "ensureDir": "mkdir -p ./dist",
+    "start": "npm run dev & npm run watch",
+    "watch": "browser-sync start -s ./dist --directory -f ./dist "
+  },
+  "keywords": [
+    "Stencila",
+    "email",
+    "template",
+    "design",
+    "MJML"
+  ],
+  "repository": "https://github.com/stencila/email-templates",
+  "author": "https://github.com/stencila/style/graphs/contributors",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "mjml": "^4.4.0-beta.2",
+    "rimraf": "^2.6.3"
+  }
+}
