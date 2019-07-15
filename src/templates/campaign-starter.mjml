@@ -1,0 +1,35 @@
+<mjml lang="en">
+  <mj-include path="../_partials/campaign/_head.mjml" />
+
+  <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
+    <mj-include path="./_partials/_hero.mjml" />
+
+    <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
+      <mj-section padding="0">
+        <mj-column width="100%" padding="0">
+          <mj-text align="left" padding="0">
+            <h1>Thank you for your interest!</h1>
+
+            <p>
+              We’re actively working on new functionalities and will let you know as soon as we’re ready with our closed beta programme.
+            </p>
+
+            <p>
+              Meanwhile, we’ll keep send you our newsletter and invitations
+              to our monthly community calls where you can join us to see
+              what’s new, provide feedback, and ask any questions.
+            </p>
+
+            <p>
+              Best regards,<br />
+              Team Stencila<br />
+              💖
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="../_partials/campaign/_footer.mjml" />
+  </mj-body>
+</mjml>

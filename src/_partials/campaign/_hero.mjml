@@ -1,0 +1,13 @@
+<mj-section padding="24px 0 16px 0" full-width="full-width">
+  <mj-group>
+    <mj-column padding="0" width="75%">
+      <mj-image align="left" src="https://marketing-image-production.s3.amazonaws.com/uploads/17be5b4f8a28b121fd733f61245f37a11a9ad5c1afceb537a16e35ec579c7defa592aacebeaf5d526ac8920bfc7951643e693ddec0a530605916518dae03dba5.jpg" title="Stencila Logo" alt="Stencila" width="140px" padding="0" target="#" />
+    </mj-column>
+
+    <mj-column width="25%" padding="0">
+      <mj-text color="#707070" align="right" text-transform="uppercase" font-size="10px" letter-spacing="1px" padding="8px 0">
+        <a href="[Weblink]" style="text-decoration: none;">View Online</a>
+      </mj-text>
+    </mj-column>
+  </mj-group>
+</mj-section>

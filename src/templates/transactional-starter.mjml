@@ -1,20 +1,8 @@
 <mjml lang="en">
-  <mj-include path="./_partials/_header.mjml" />
+  <mj-include path="../_partials/_head.mjml.mjml" />
 
   <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
-    <mj-section padding="24px 0 16px 0" full-width="full-width">
-      <mj-group>
-        <mj-column padding="0" width="75%">
-          <mj-image align="left" src="https://marketing-image-production.s3.amazonaws.com/uploads/17be5b4f8a28b121fd733f61245f37a11a9ad5c1afceb537a16e35ec579c7defa592aacebeaf5d526ac8920bfc7951643e693ddec0a530605916518dae03dba5.jpg" title="Stencila Logo" alt="Stencila" width="140px" padding="0" target="#" />
-        </mj-column>
-
-        <mj-column width="25%" padding="0">
-          <mj-text color="#707070" align="right" text-transform="uppercase" font-size="10px" letter-spacing="1px" padding="8px 0">
-            <a href="#" style="text-decoration: none;">View Online</a>
-          </mj-text>
-        </mj-column>
-      </mj-group>
-    </mj-section>
+    <mj-include path="../_partials/transactional_hero.mjml" />
 
     <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
       <mj-section padding="0">
@@ -49,6 +37,6 @@
       </mj-section>
     </mj-wrapper>
 
-    <mj-include path="./_partials/_footer.mjml" />
+    <mj-include path="../_partials/transactional/_footer.mjml" />
   </mj-body>
 </mjml>

@@ -1,0 +1,60 @@
+<mj-section padding="32px 0">
+  <mj-column padding="0">
+    <mj-divider border-width="1px" border-color="#B5B5B5" padding="0" />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-group>
+    <mj-column padding="0">
+      <mj-text padding="0px">
+        <ul class="footer__links">
+          <li><a href="https://stenci.la">Visit Website</a></li>
+          <li><a href="https://stenci.la/blog">Blog</a></li>
+          <li><a href="https://stenci.la/learn/faq.html">FAQ</a></li>
+          <li><a href="mailto:hello@stenci.la">Email Support</a></li>
+        </ul>
+      </mj-text>
+    </mj-column>
+
+    <mj-column>
+      <mj-social font-size="16px" icon-size="24px" mode="horizontal" border-radius="0" align="left" padding="0">
+        <mj-social-element name="github" href="https://github.com/stencila" background-color="#4a4a4a">
+        </mj-social-element>
+        <mj-social-element name="twitter" href="https://twitter.com/stencila" background-color="#4a4a4a">
+        </mj-social-element>
+        <!-- <mj-social-element name="web" href="https://mjml.io/">
+            Zulip Chat
+          </mj-social-element> -->
+      </mj-social>
+    </mj-column>
+  </mj-group>
+</mj-section>
+
+<mj-section padding="32px 0">
+  <mj-column padding="0">
+    <mj-divider border-width="1px" border-color="#B5B5B5" padding="0" />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 0 32px" css-class="footer" text-align="left">
+  <mj-column padding="0" css-class="m-full-width">
+    <mj-text padding="0px">
+      <h4>Address</h4>
+      <p>
+        {{Sender_Address}}</br>
+        {{Sender_City}}, {{Sender_Country}}</br>
+        {{Sender_Postal_Code}}</br>
+        {{Sender_Phone_Number}}
+      </p>
+    </mj-text>
+  </mj-column>
+
+  <mj-column padding="0" css-class="m-full-width">
+    <mj-text padding="0px">
+      <p>
+        {{{Reason_For_Contacting}}}
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>

@@ -43,9 +43,9 @@
       <h4>Address</h4>
       <p>
         {{Sender_Address}}</br>
-        {{Sender_City}}, {{country}}</br>
-        {{postal_code}}</br>
-        {{phone_number}}
+        {{Sender_City}}, {{Sender_Country}}</br>
+        {{Sender_Postal_Code}}</br>
+        {{Sender_Phone_Number}}
       </p>
     </mj-text>
   </mj-column>

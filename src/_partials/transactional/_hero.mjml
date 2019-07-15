@@ -1,0 +1,5 @@
+<mj-section padding="24px 0 16px 0" full-width="full-width">
+  <mj-column padding="0" width="100%">
+    <mj-image align="left" src="https://marketing-image-production.s3.amazonaws.com/uploads/17be5b4f8a28b121fd733f61245f37a11a9ad5c1afceb537a16e35ec579c7defa592aacebeaf5d526ac8920bfc7951643e693ddec0a530605916518dae03dba5.jpg" title="Stencila Logo" alt="Stencila" width="140px" padding="0" target="#" />
+  </mj-column>
+</mj-section>
