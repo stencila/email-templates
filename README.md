@@ -42,6 +42,14 @@ You can see the existing templates by changing `Filter By` to `Custom`.
 
 Once you’re in the template editor, follow the instructions for [Importing HTML into the template](https://sendgrid.com/docs/ui/sending-email/editor/#importing-custom-html-with-drag--drop-markup).
 
+There are a few manual steps which need to be performed after each time HTML is imported:
+
+- Change the `EMAIL BODY` `Background Color` to `#F5F5F5`
+- Change the `EMAIL BODY` `Text Color` to `#363636`
+- Change the `EMAIL BODY` `Link Color` to `inherit`
+- Change the `EMAIL BODY` `Font Size` to `20px`
+- Change the email `CONTENT CONTAINER` width to `640px`
+
 ## Sending Emails
 
 Transactional Email templates require some [substitution tags](https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/#send-a-transactional-email) to be defined for the variables to be correctly interpolated.
