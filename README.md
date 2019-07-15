@@ -32,13 +32,15 @@ Navigate to [SendGrid transactional templates](https://sendgrid.com/dynamic_temp
 
 > ⚠️ Please make sure to use the **Code Editor** mode as the type of template.
 
-### Transactional Template
+### Marketing Template
 
 Navigate to [SendGrid marketing templates page](https://sendgrid.com/marketing_campaigns/ui/marketing_templates) and follow the [instruction here](https://sendgrid.com/docs/ui/sending-email/working-with-marketing-templates/#creating-a-new-template).
 
 > ⚠️ Please make sure to use the **Design Editor** mode as the type of template.
 
 You can see the existing templates by changing `Filter By` to `Custom`.
+
+Once you’re in the template editor, follow the instructions for [Importing HTML into the template](https://sendgrid.com/docs/ui/sending-email/editor/#importing-custom-html-with-drag--drop-markup).
 
 ## Sending Emails
 
