@@ -1,8 +1,8 @@
 <mjml lang="en">
-  <mj-include path="../_partials/_head.mjml.mjml" />
+  <mj-include path="../../_partials/_head.mjml" />
 
   <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
-    <mj-include path="../_partials/transactional_hero.mjml" />
+    <mj-include path="../../_partials/transactional/_hero.mjml" />
 
     <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
       <mj-section padding="0">
@@ -37,6 +37,6 @@
       </mj-section>
     </mj-wrapper>
 
-    <mj-include path="../_partials/transactional/_footer.mjml" />
+    <mj-include path="../../_partials/transactional/_footer.mjml" />
   </mj-body>
 </mjml>

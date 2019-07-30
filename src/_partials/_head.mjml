@@ -32,6 +32,12 @@
   </mj-style>
 
   <mj-style inline="inline">
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      font-family: "Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif";
+    }
+
     h1,
     h2,
     h3,
@@ -81,12 +87,22 @@
     a,
     a:link {
       color: inherit;
+      text-decoration: underline;
     }
 
     ul {
-      list-style-type: none;
       margin: 0;
       padding: 0;
+      list-style-position: inside;
+      list-style-type: circle;
+    }
+
+    ul li {
+      font-size: 18px;
+    }
+
+    ul.footer__links {
+      list-style-type: none;
     }
 
     .footer h4,

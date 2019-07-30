@@ -42,10 +42,10 @@
     <mj-text padding="0px">
       <h4>Address</h4>
       <p>
-        {{Sender_Address}}</br>
-        {{Sender_City}}, {{Sender_Country}}</br>
-        {{Sender_Postal_Code}}</br>
-        {{Sender_Phone_Number}}
+        [Sender_Address]</br>
+        [Sender_City], [Sender_Country]</br>
+        [Sender_Zip]</br>
+        [Sender_Phone_Number]
       </p>
     </mj-text>
   </mj-column>
@@ -55,8 +55,8 @@
       <h4>Unsubscribe</h4>
       <p>
         You are receiving this email because you indicated that you
-        wished to subscribe to our newsletter. To unsubscribe,
-        <a href="<%asm_preferences_raw_url%>">click here</a>.
+        wished to subscribe to our newsletter. You may <a href="
+        [unsubscribe]">unsubscribe</a>, or <a href="<%asm_preferences_raw_url%>">change your preferences</a>.
       </p>
     </mj-text>
   </mj-column>
