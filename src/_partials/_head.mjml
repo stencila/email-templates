@@ -1,178 +1,176 @@
-<mj-head>
-  <mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito" />
-  <mj-attributes>
-    <mj-all font-family="Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-all>
-    <mj-text font-weight="400" font-size="20px" color="#363636" line-height="30px" font-family="Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-text>
-    <mj-button align="left" font-weight="bold" height="40px" background-color="#2568EF" border-radius="60px" inner-padding="0 16px" text-transform="uppercase" font-size="14px"></mj-button>
-    <mj-table css-class="datatable"></mj-table>
-  </mj-attributes>
+<mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito" />
+<mj-attributes>
+  <mj-all font-family="Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-all>
+  <mj-text font-weight="400" font-size="20px" color="#363636" line-height="30px" font-family="Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-text>
+  <mj-button align="left" font-weight="bold" height="40px" background-color="#2568EF" border-radius="60px" inner-padding="0 16px" text-transform="uppercase" font-size="14px"></mj-button>
+  <mj-table css-class="datatable"></mj-table>
+</mj-attributes>
 
-  <mj-style>
-    @media (max-width:480px) {
-    .body__wrapper {
-    padding: 16px;
-    }
+<mj-style>
+  @media (max-width:480px) {
+  .body__wrapper {
+  padding: 16px;
+  }
 
-    .main__content > table > tbody > tr > td {
-    padding: 24px 16px !important;
-    }
+  .main__content > table > tbody > tr > td {
+  padding: 24px 16px !important;
+  }
 
-    .hero > tbody > tr > td > div > table > tbody > tr > td {
-    padding-top: 8px !important;
-    }
+  .hero > tbody > tr > td > div > table > tbody > tr > td {
+  padding-top: 8px !important;
+  }
 
-    .m-full-width+.m-full-width {
-    padding-top: 32px;
-    }
+  .m-full-width+.m-full-width {
+  padding-top: 32px;
+  }
 
-    h1 {
-    font-size: 24px !important;
-    }
+  h1 {
+  font-size: 24px !important;
+  }
 
-    p {
-    font-size: 18px !important;
+  p {
+  font-size: 18px !important;
+  line-height: 1.5;
+  }
+
+  .datatable tr {
+  font-size: 15px !important;
+  }
+
+  }
+</mj-style>
+
+<mj-style inline="inline">
+  p {
+    font-size: 20px;
     line-height: 1.5;
-    }
+    font-family: "Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif";
+  }
 
-    .datatable tr {
-    font-size: 15px !important;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    line-height: 125%;
+  }
 
-    }
-  </mj-style>
+  h1 {
+    font-size: 28px;
+    margin-top: 0;
+  }
 
-  <mj-style inline="inline">
-    p {
-      font-size: 20px;
-      line-height: 1.5;
-      font-family: "Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif";
-    }
+  h2 {
+    font-size: 24px;
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-weight: bold;
-      line-height: 125%;
-    }
+  h3 {
+    font-size: 20px;
+  }
 
-    h1 {
-      font-size: 28px;
-      margin-top: 0;
-    }
+  h4 {
+    font-size: 18px;
+  }
 
-    h2 {
-      font-size: 24px;
-    }
+  h6 {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+  }
 
-    h3 {
-      font-size: 20px;
-    }
+  button {
+    letter-spacing: 1px;
+  }
 
-    h4 {
-      font-size: 18px;
-    }
+  .main__content {
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
 
-    h6 {
-      font-style: normal;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 1px;
-      margin: 0;
-      text-transform: uppercase;
-    }
+  a,
+  a:link {
+    color: inherit;
+    text-decoration: underline;
+  }
 
-    button {
-      letter-spacing: 1px;
-    }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: circle;
+  }
 
-    .main__content {
-      -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    }
+  .main__content ul li {
+    font-size: 19px;
+  }
 
-    a,
-    a:link {
-      color: inherit;
-      text-decoration: underline;
-    }
+  ul.footer__links {
+    list-style-type: none;
+  }
 
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style-position: inside;
-      list-style-type: circle;
-    }
+  .footer h4,
+  .footer__links {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.75;
+    text-transform: uppercase;
+  }
 
-    .main__content ul li {
-      font-size: 19px;
-    }
+  .footer__links a {
+    text-decoration: none;
+  }
 
-    ul.footer__links {
-      list-style-type: none;
-    }
+  .footer h4 {
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+  }
 
-    .footer h4,
-    .footer__links {
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      line-height: 1.75;
-      text-transform: uppercase;
-    }
+  .footer p {
+    font-size: 14px;
+    line-height: 1.25;
+  }
 
-    .footer__links a {
-      text-decoration: none;
-    }
+  .footer h4+p {
+    margin-top: 4px;
+  }
 
-    .footer h4 {
-      line-height: 1.25;
-      margin: 0;
-      padding: 0;
-    }
+  p:first-child {
+    margin-top: 0;
+  }
 
-    .footer p {
-      font-size: 14px;
-      line-height: 1.25;
-    }
+  p:last-child {
+    margin-bottom: 0;
+  }
 
-    .footer h4+p {
-      margin-top: 4px;
-    }
+  td.datatable {
+    padding: 16px 0 !important;
+  }
 
-    p:first-child {
-      margin-top: 0;
-    }
+  .datatable tr {
+    line-height: 1.5;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #dbdbdb;
+  }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
+  .datatable tr td {
+    padding: 8px 0;
+  }
 
-    td.datatable {
-      padding: 16px 0 !important;
-    }
-
-    .datatable tr {
-      line-height: 1.5;
-      text-align: left;
-      font-size: 16px;
-      border-bottom: 1px solid #dbdbdb;
-    }
-
-    .datatable tr td {
-      padding: 8px 0;
-    }
-
-    .CTA_link {
-      border-bottom: 2px solid #1d63f3;
-      padding-bottom: 2px;
-      font-size: 85%;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-  </mj-style>
-</mj-head>
+  .CTA_link {
+    border-bottom: 2px solid #1d63f3;
+    padding-bottom: 2px;
+    font-size: 85%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+</mj-style>

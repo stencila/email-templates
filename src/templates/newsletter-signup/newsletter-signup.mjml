@@ -1,5 +1,7 @@
 <mjml lang="en">
-  <mj-include path="../../_partials/_head.mjml" />
+  <mj-head>
+    <mj-include path="../../_partials/_head.mjml" />
+  </mj-head>
 
   <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
     <mj-include path="../../_partials/transactional/_hero.mjml" />
