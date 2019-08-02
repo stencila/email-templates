@@ -4,6 +4,7 @@
     <mj-all font-family="Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-all>
     <mj-text font-weight="400" font-size="20px" color="#363636" line-height="30px" font-family="Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-text>
     <mj-button align="left" font-weight="bold" height="40px" background-color="#2568EF" border-radius="60px" inner-padding="0 16px" text-transform="uppercase" font-size="14px"></mj-button>
+    <mj-table css-class="datatable"></mj-table>
   </mj-attributes>
 
   <mj-style>
@@ -16,6 +17,10 @@
     padding: 24px 16px !important;
     }
 
+    .hero > tbody > tr > td > div > table > tbody > tr > td {
+    padding-top: 8px !important;
+    }
+
     .m-full-width+.m-full-width {
     padding-top: 32px;
     }
@@ -25,16 +30,21 @@
     }
 
     p {
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 1.5;
     }
+
+    .datatable tr {
+    font-size: 15px !important;
+    }
+
     }
   </mj-style>
 
   <mj-style inline="inline">
     p {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 1.5;
       font-family: "Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif";
     }
 
@@ -97,8 +107,8 @@
       list-style-type: circle;
     }
 
-    ul li {
-      font-size: 18px;
+    .main__content ul li {
+      font-size: 19px;
     }
 
     ul.footer__links {
@@ -133,8 +143,36 @@
       margin-top: 4px;
     }
 
+    p:first-child {
+      margin-top: 0;
+    }
+
     p:last-child {
       margin-bottom: 0;
+    }
+
+    td.datatable {
+      padding: 16px 0 !important;
+    }
+
+    .datatable tr {
+      line-height: 1.5;
+      text-align: left;
+      font-size: 16px;
+      border-bottom: 1px solid #dbdbdb;
+    }
+
+    .datatable tr td {
+      padding: 8px 0;
+    }
+
+    .CTA_link {
+      border-bottom: 2px solid #1d63f3;
+      padding-bottom: 2px;
+      font-size: 85%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
     }
   </mj-style>
 </mj-head>
