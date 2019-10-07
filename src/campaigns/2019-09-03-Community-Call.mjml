@@ -1,0 +1,125 @@
+<mjml lang="en">
+  <mj-head>
+    <mj-include path="../_partials/_head.mjml" />
+    <mj-preview>🗓 September 4 or 5 • </mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
+    <mj-include path="../_partials/campaign/_hero.mjml" />
+
+    <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
+      <mj-section padding="0">
+        <mj-column width="100%" padding="0">
+          <mj-text align="left" padding="0">
+            <h1>Welcome to September’s updates!</h1>
+
+            <p>
+              This summer (or winter for our friends in the Southern Hemisphere) has been a busy one on our journey to building a platform for the next generation of executable documents.
+            </p>
+
+            <p>
+              Join us for tomorrow’s Community Call to learn about how we are working to enable a workflow with seamless collaboration across Jupyter Notebooks, R Markdown, Word, Google Docs, and other formats!
+            </p>
+
+          </mj-text>
+
+          <mj-button padding="24px 0" href="https://zoom.us/webinar/register/WN_mnVgZtNEQXezMtDtSz6VaA?timezone_id=America%2FLos_Angeles">
+            Add Community Call to my Calendar
+          </mj-button>
+
+          <mj-divider padding="16px 0 8px" />
+
+
+          <mj-text align="left" padding="0">
+            <h2>Data Driven Documents & Execution Engines</h2>
+
+            <p>At Stencila, we believe that in order for researchers to perform their best work, their list of collaborators should not be at the mercy of software or document format differences. Everyone works differently, and we recognize that some tools are better suited for different tasks. Rather than force the world to conform to a single sub-par solution, we want to make it effortless to collaborate across software and departmental divides.</p>
+
+            <p>We envision a workflow solely constrained by ideas and information, rather than software, programming languages, or technical literacy difference.</p>
+
+          </mj-text>
+
+          <mj-image src="https://marketing-image-production.s3.amazonaws.com/uploads/b6d935ef9f69ddd907b49e405f252a3aacf432d4693c261ec85b3af8d96053da7b49bf01e6ef45d6b27eb5cb25c9604ca34c305504ef54a4262457c3d66b9123.png" alt="Stencila’s Encoda allows lossless conversion between many formats" width="320px" padding="40px 0 16px" fluid-on-mobile="true" />
+
+          <mj-text align="left" padding="0">
+            <p>To this end, we are creating data-driven documents which can be freely shared. There are a several things needed for this, but I&#8217;d like to highlight two aspects that have been the primary subjects of our work for the past month or two.</p>
+
+            <p>For shareable data-driven documents, we need:</p>
+
+            <ul>
+              <li>the ability to semantically parse documents</li>
+              <li>for sections which rely on code or formulas to generate artifacts and data (such as Jupyter Notebook code cells), we need the ability to include their output with the shared files.</li>
+            </ul>
+          </mj-text>
+
+          <mj-text align="left" padding="0">
+            <p>Without this second point, collaborating across formats becomes fraught with problems of compatibility and introduces huge losses of information and context during translation. This means collaborators never receive the full picture, and are unable to make meaningful contributions—or at worst provide wrong contributions.</p>
+
+            <p>This is where Stencila&#8217;s execution engines come in, as they allow us to process and share reproducible documents, without sacrificing ease of collaboration. </p>
+
+            <p>Ben has been working on the execution engines and will be demoing his work at our Community Call.</p>
+            <p>You can find the times in your local time zone below.</p>
+          </mj-text>
+
+          <mj-table>
+            <tr>
+              <td>Time Zone</td>
+              <td>Date</td>
+              <td>Local Time</td>
+            </tr>
+            <tr>
+              <td>NZST</td>
+              <td>Thursday, September 5</td>
+              <td>6:00 am</td>
+            </tr>
+            <tr>
+              <td>GMT</td>
+              <td>Wednesday, September 4</td>
+              <td>6:00 pm</td>
+            </tr>
+            <tr>
+              <td>EDT</td>
+              <td>Wednesday, September 4</td>
+              <td>2:00 pm</td>
+            </tr>
+            <tr>
+              <td>PDT</td>
+              <td>Wednesday, September 4</td>
+              <td>11:00 am</td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 8px;" colspan="3">
+                <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Stencila+Community+Call+-+September+2019&iso=20190905T06&p1=22&ah=1" class="CTA_link">See more times</a>
+              </td>
+            </tr>
+          </mj-table>
+
+          <mj-button padding="24px 0" href="https://zoom.us/webinar/register/WN_mnVgZtNEQXezMtDtSz6VaA?timezone_id=America%2FLos_Angeles">
+            Add Community Call to my Calendar
+          </mj-button>
+
+          <mj-divider padding="16px 0 48px" />
+
+          <mj-text align="left" padding="0">
+            <p>That&#8217;s not all we&#8217;ve been up to! Some highlights include:</p>
+
+            <ul>
+              <li>We have added two more themes to <a href="https://github.com/stencila/thema">Thema</a>, our semantic HTML styling library tailored for creating delightfully readable articles.</li>
+              <li>Expanding the <a href="https://github.com/stencila/schema">Schema</a> definitions to better support more types of content such as Publication, Journals, and References needed for working with executable documents.</li>
+              <li>Work on project we hope to reveal in a couple of weeks 🎁</li>
+            </ul>
+
+            <p>Looking forward to seeing you at the <a href="https://zoom.us/webinar/register/WN_mnVgZtNEQXezMtDtSz6VaA?timezone_id=America%2FLos_Angeles">community call</a> tomorrow, or on our <a href="stencila.zulipchat.com">online chat platform, Zulip</a>.</p>
+
+            <p>Thanks for reading,</br>
+              Alex and the team at Stencila</br>
+              👋
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="../_partials/campaign/_footer.mjml" />
+  </mj-body>
+</mjml>
