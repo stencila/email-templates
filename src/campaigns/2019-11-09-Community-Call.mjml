@@ -1,0 +1,95 @@
+<mjml lang="en">
+  <mj-head>
+    <mj-include path="../_partials/_head.mjml" />
+    <mj-preview>🌅 Executable Documents on the horizon • </mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
+    <mj-include path="../_partials/campaign/_hero.mjml" />
+
+    <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
+      <mj-section padding="0">
+        <mj-column width="100%" padding="0">
+          <mj-text align="left" padding="0">
+            <h1>Authoring reproducible documents on Stencila nears the home stretch!</h1>
+
+            <p>
+              We’re excited to announce that the foundational work needed for executing
+              code in reproducible, shareable, and isolated environments, has reached an important milestone.
+              As we write this update, we’re working hard to bring these changes to you by building new
+              manuscript authoring interfaces.
+            </p>
+
+            <p>
+              To learn more, please join our <a href="https://zoom.us/webinar/register/WN_mnVgZtNEQXezMtDtSz6VaA?timezone_id=America%2FLos_Angeles">community call tomorrow</a>.
+              The times for the call can be found below.
+            </p>
+
+            <p>
+              Changes for executing code elements will soon be available to try in limited capacity on <a href="https://hub.stenci.la/open/">Stencila Open</a>,
+              our online tool for quickly sharing and collaborating on manuscripts.
+            </p>
+
+            <p>Thanks for reading,<br /> Alex and the team at Stencila<br /> 🥳</p>
+          </mj-text>
+
+          <mj-divider padding="48px 0 32px" />
+
+          <mj-text align="left" padding="0">
+            <h2>Community Call</h2>
+
+            <p>
+              Our monthly community call will take place tomorrow, during
+              which we will go over Stencila <a href="https://github.com/stencila/executa">Executa</a> and <a href="https://github.com/stencila/sparkla">Sparkla</a> projects,
+              a brief overview of how we design and build out our components, as well as answer community questions.
+              Please find the times in your local time zone below.
+            </p>
+          </mj-text>
+
+          <mj-table>
+            <tr>
+              <td>Time Zone</td>
+              <td>Date</td>
+              <td>Local Time</td>
+            </tr>
+            <tr>
+              <td>NZST</td>
+              <td>Thursday, November 7</td>
+              <td>6:00 am</td>
+            </tr>
+            <tr>
+              <td>GMT</td>
+              <td>Wednesday, November 6</td>
+              <td>5:00 pm</td>
+            </tr>
+            <tr>
+              <td>EST</td>
+              <td>Wednesday, November 6</td>
+              <td>12:00 pm</td>
+            </tr>
+            <tr>
+              <td>PST</td>
+              <td>Wednesday, November 6</td>
+              <td>9:00 am</td>
+            </tr>
+            <tr>
+              <td style="text-align: center; padding: 8px;" colspan="3"> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Stencila+Community+Call%3A+November&iso=20191107T06&p1=22&ah=1" class="CTA_link">See more times</a> </td>
+            </tr>
+          </mj-table>
+
+          <mj-button padding="24px 0" href="https://zoom.us/webinar/register/WN_mnVgZtNEQXezMtDtSz6VaA?timezone_id=America%2FLos_Angeles">
+            Add Community Call to my Calendar </mj-button>
+
+          <mj-divider padding="32px 0 32px" />
+
+          <mj-text align="left" padding="0">
+
+            <p>If you have any questions or ideas, feel free to reply to this email or <a href="https://stencila.zulipchat.com">join our chat platform</a>.</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="../_partials/campaign/_footer.mjml" />
+  </mj-body>
+</mjml>
