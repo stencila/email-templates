@@ -20,25 +20,25 @@
             </p>
 
             <p>
-              Even with the above in mind, we still managed to pull a few exciting
-              things to share during our <a href="https://zoom.us/webinar/register/WN_mnVgZtNEQXezMtDtSz6VaA?timezone_id=America%2FLos_Angeles">community
+              Despite all this business, we have a few interesting things to
+              share during our <a href="https://zoom.us/webinar/register/WN_mnVgZtNEQXezMtDtSz6VaA?timezone_id=America%2FLos_Angeles">community
                 call tomorrow</a>, the times for which can be found below.
             </p>
 
             <p>
               A few of the highlights since our last check-in include a
-              typescript <a href="https://github.com/stencila/configa">library for
+              Typescript <a href="https://github.com/stencila/configa">library for
                 application configuration management</a> in a type-safe, DRY,
               and self-documenting manner. It is currently in early alpha
               stages, but already proving its worth in use across internal projects.
             </p>
 
             <p>
-              Another area we’re preparing for expansion next year is the <a href="https://stencila.github.io/thema/">Thema style
-                roster</a>. To make theme contributions less daunting we’ve
-              added automated visual regression testing. This setup will
-              allow both contributors and reviewers to ensure that new themes
-              don't cause conflicts with existing ones.
+              Another area we’re preparing for expansion next year is the <a href="https://stencila.github.io/thema/">Thema</a> roster of
+              themes. To make contributions less daunting we’ve added
+              automated visual regression testing. This setup will allow both
+              contributors and reviewers to ensure that new themes don't
+              cause conflicts with existing ones.
             </p>
 
             <p>
@@ -46,7 +46,7 @@
               <a href="https://github.com/stencila/hub">Stencila Hub</a> to
               allow programmatic interactions. This will open up an exciting
               world of possibilities, both 1<sup>st</sup> and 3<sup>rd</sup>
-              party—more new to come about this early next year.
+              party—more to come about this early next year.
             </p>
 
             <p>
