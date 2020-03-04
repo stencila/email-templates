@@ -24,7 +24,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "2.26.7",
-    "mjml": "4.6.1",
+    "mjml": "4.6.2",
     "rimraf": "3.0.2"
   }
 }
