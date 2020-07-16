@@ -1,0 +1,23 @@
+# Publishes a NPM package if the version number changes in the `package.json` file. This allows us to only publish
+# changes affecting the transactional templates, without causing a release for marketing template changes.
+# @see https://github.com/marketplace/actions/npm-publish
+
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10
+      - run: npm install
+      - run: npm test
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
