@@ -1,10 +1,10 @@
 <mjml lang="en">
   <mj-head>
-    <mj-include path="../../_partials/_head.mjml" />
+    <mj-include path="../_partials/campaign/_head.mjml" />
   </mj-head>
 
   <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
-    <mj-include path="../../_partials/campaign/_hero.mjml" />
+    <mj-include path="../_partials/_hero.mjml" />
 
     <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
       <mj-section padding="0">
@@ -20,7 +20,7 @@
             </p>
           </mj-text>
 
-          <mj-button padding="16px 0" href="#">
+          <mj-button padding="16px 0" href="https://stenci.la">
             Button
           </mj-button>
 
@@ -49,6 +49,6 @@
       </mj-section>
     </mj-wrapper>
 
-    <mj-include path="../../_partials/campaign/_footer.mjml" />
+    <mj-include path="../_partials/campaign/_footer.mjml" />
   </mj-body>
 </mjml>

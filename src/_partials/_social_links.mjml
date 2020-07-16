@@ -1,0 +1,8 @@
+<mj-social font-size="16px" font-family="Montserrat" icon-size="16px" mode="horizontal" border-radius="4px" align="left" padding="0" css-class="socialLinks">
+  <mj-social-element alt="GitHub" name="github" href="https://github.com/stencila" src="https://cdn.mcauto-images-production.sendgrid.net/829808173aa98a4f/6475a5eb-a1e1-4ac9-a3ef-4e02c89beb0d/72x72.png" background-color="#4a4a4a" icon-padding="2px" icon-size="18px" icon-height="14px">
+  </mj-social-element>
+  <mj-social-element alt="Twitter" name="twitter-noshare" href="https://twitter.com/stencila" src="https://cdn.mcauto-images-production.sendgrid.net/829808173aa98a4f/3f02b650-2f10-43a5-9b8a-5b2b96101751/72x72.png" background-color="#4a4a4a" icon-padding="2px" icon-size="18px" icon-height="14px">
+  </mj-social-element>
+  <mj-social-element alt="Discord" name="web" href="https://discord.gg/uFtQtk9" src="https://cdn.mcauto-images-production.sendgrid.net/829808173aa98a4f/6b363233-f519-4d02-9004-95a566981a87/72x72.png" background-color="#4a4a4a" icon-padding="2px" icon-size="18px" icon-height="14px">
+  </mj-social-element>
+</mj-social>

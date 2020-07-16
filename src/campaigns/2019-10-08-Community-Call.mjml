@@ -1,6 +1,6 @@
 <mjml lang="en">
   <mj-head>
-    <mj-include path="../_partials/_head.mjml" />
+    <mj-include path="../_partials/campaign/_head.mjml" />
     <mj-preview>🔑 New tool for reproducible collaboration • </mj-preview>
 
     <mj-style>
@@ -15,7 +15,7 @@
   </mj-head>
 
   <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
-    <mj-include path="../_partials/campaign/_hero.mjml" />
+    <mj-include path="../_partials/_hero.mjml" />
 
     <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
       <mj-section padding="0">

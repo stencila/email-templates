@@ -1,0 +1,95 @@
+<mj-font name="Montserrat" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700" />
+<mj-font name="Lato" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400" />
+
+<mj-attributes>
+  <mj-all font-family="Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-all>
+  <mj-text font-weight="400" font-size="18px" color="#363636" line-height="30px" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-text>
+  <mj-button css-class="button" align="left" font-weight="bold" background-color="#2568EF" border-radius="4px" inner-padding="12px 16px" text-transform="uppercase" font-size="14px"></mj-button>
+  <mj-table css-class="datatable"></mj-table>
+  <mj-divider padding="0" border-width="1px" border-color="#dbdbdb"></mj-divider>
+</mj-attributes>
+
+<mj-style>
+  @media (max-width:480px) {
+  .body__wrapper {
+  padding: 16px;
+  }
+
+  /* Fix link styles in GMail. @see https://www.litmus.com/blog/how-to-fix-blue-links-in-gmail */
+  u+.body__wrapper a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  }
+
+  .main__content > table > tbody > tr > td {
+  padding: 24px 16px !important;
+  }
+
+  .hero > tbody > tr > td > div > table > tbody > tr > td {
+  padding-top: 8px !important;
+  }
+
+  .m-full-width+.m-full-width {
+  padding-top: 32px;
+  }
+
+  h1 {
+  font-size: 23px !important;
+  }
+
+  h2 {
+  font-size: 20px !important;
+  }
+
+  h3 {
+  font-size: 18px !important;
+  }
+
+  p, li {
+  font-size: 16px !important;
+  line-height: 1.5;
+  }
+
+  .datatable tr {
+  font-size: 15px !important;
+  }
+
+  .socialLinks {
+  padding-top: 8px !important;
+  }
+  }
+
+  p a.button td:hover,
+  .footer__links a,
+  .socialLinks td table,
+  .button td,
+  .button td a,
+  a.intercom-h2b-button {
+  transition: color 150ms ease-out, background 150ms ease-out;
+  }
+
+  p a:hover,
+  .footer__links a:hover {
+  color: #2568ef !important;
+  text-decoration: underline !important;
+  }
+
+  a.intercom-h2b-button:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+  }
+
+  .socialLinks td table:hover {
+  background: #2568ef !important;
+  }
+
+  .button td:hover,
+  .button td:hover a,
+  a.intercom-h2b-button:hover {
+  background: #1c4fb5 !important;
+  }
+</mj-style>

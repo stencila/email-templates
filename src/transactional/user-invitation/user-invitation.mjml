@@ -1,0 +1,44 @@
+<mjml lang="en">
+  <mj-head>
+    <mj-preview>{{ inviter_name }} invited you to Stencila</mj-preview>
+    <mj-include path="../../_partials/transactional/_head.mjml" />
+  </mj-head>
+
+  <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
+    <mj-include path="../../_partials/_hero.mjml" />
+
+    <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
+      <mj-section padding="0">
+        <mj-column width="100%" padding="0">
+          <mj-text align="left" padding="0">
+            <h6>You‘ve been invited</h6>
+            <h1>{{ inviter_name }} wants you to collaborate on Stencila.</h1>
+
+            <p class="quote notification">
+              {{ invite_message }}
+            </p>
+          </mj-text>
+
+          <mj-button padding="24px 0 0" href="{{ invite_url }}">
+            Accept Invitation
+          </mj-button>
+
+          <mj-divider padding="32px 0" />
+
+          <mj-text align="left" padding="0">
+            <p class="note">
+              If you’re having trouble with the link above, you can copy and paste the following URL in your browser:
+            </p>
+
+            <p class="note code notification" style="text-align: center;">
+              <a href="{{ invite_url }}" style="text-decoration: none;">{{ invite_url }}</a>
+            </p>
+          </mj-text>
+
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="../../_partials/transactional/_footer.mjml" />
+  </mj-body>
+</mjml>

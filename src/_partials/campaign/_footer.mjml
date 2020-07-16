@@ -1,34 +1,11 @@
-<mj-section padding="32px 0">
+<mj-section padding="32px 0 0">
   <mj-column padding="0">
-    <mj-divider border-width="1px" border-color="#B5B5B5" padding="0" />
+    <mj-include path="../_links.mjml" />
   </mj-column>
-</mj-section>
 
-<mj-section padding="0">
-  <mj-group>
-    <mj-column padding="0">
-      <mj-text padding="0px">
-        <ul class="footer__links">
-          <li><a href="https://stenci.la">Visit Website</a></li>
-          <li><a href="https://stenci.la/blog">Blog</a></li>
-          <li><a href="https://stenci.la/learn/faq.html">FAQ</a></li>
-          <li><a href="mailto:hello@stenci.la">Email Support</a></li>
-        </ul>
-      </mj-text>
-    </mj-column>
-
-    <mj-column>
-      <mj-social font-size="16px" icon-size="24px" mode="horizontal" border-radius="0" align="left" padding="0">
-        <mj-social-element name="github" href="https://github.com/stencila" background-color="#4a4a4a">
-        </mj-social-element>
-        <mj-social-element name="twitter-noshare" href="https://twitter.com/stencila" background-color="#4a4a4a">
-        </mj-social-element>
-        <!-- <mj-social-element name="web" href="https://mjml.io/">
-            Zulip Chat
-          </mj-social-element> -->
-      </mj-social>
-    </mj-column>
-  </mj-group>
+  <mj-column>
+    <mj-include path="../_social_links.mjml" />
+  </mj-column>
 </mj-section>
 
 <mj-section padding="32px 0">
@@ -39,14 +16,7 @@
 
 <mj-section padding="0 0 32px" css-class="footer" text-align="left">
   <mj-column padding="0" css-class="m-full-width">
-    <mj-text padding="0px">
-      <h4>Address</h4>
-      <p>
-        [Sender_Address]</br>
-        [Sender_City], New Zealand</br>
-        [Sender_Zip]</br>
-      </p>
-    </mj-text>
+    <mj-include path="../_address.mjml" />
   </mj-column>
 
   <mj-column padding="0" css-class="m-full-width">
@@ -54,8 +24,8 @@
       <h4>Unsubscribe</h4>
       <p>
         You are receiving this email because you indicated that you
-        wished to subscribe to our newsletter. You may <a href="
-        [unsubscribe]">unsubscribe</a>, or <a href="<%asm_preferences_raw_url%>">change your preferences</a>.
+        wished to subscribe to our newsletter.<br />
+        <a href="{{ unsubscribe_url }}">Click here to unsubscribe</a>.
       </p>
     </mj-text>
   </mj-column>

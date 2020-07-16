@@ -1,0 +1,25 @@
+<mjml lang="en">
+  <mj-head>
+    <mj-include path="../_partials/transactional/_head.mjml" />
+  </mj-head>
+
+  <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
+    <mj-include path="../_partials/_hero.mjml" />
+
+    <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
+      <mj-section padding="0">
+        <mj-column width="100%" padding="0">
+          <mj-text padding="0">
+            <mj-raw>
+              <!-- htmlmin:ignore -->
+              {{ content }}
+              <!-- htmlmin:ignore -->
+            </mj-raw>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="../_partials/transactional/_footer.mjml" />
+  </mj-body>
+</mjml>
