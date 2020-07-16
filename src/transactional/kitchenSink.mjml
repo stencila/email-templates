@@ -1,0 +1,90 @@
+<mjml lang="en">
+  <mj-head>
+    <mj-include path="../_partials/transactional/_head.mjml" />
+  </mj-head>
+
+  <mj-body background-color="#F5F5F5" width="640px" css-class="body__wrapper">
+    <mj-include path="../_partials/_hero.mjml" />
+
+    <mj-wrapper background-color="#FFF" border-radius="4px" css-class="main__content" padding="48px 32px 32px">
+      <mj-section padding="0">
+        <mj-column width="100%" padding="0">
+          <mj-text align="left" padding="0">
+            <h1>Headline</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              quis iste, praesentium quo ducimus blanditiis, explicabo a
+              magni ipsam quas cumque laudantium eaque voluptas facere
+              incidunt sequi tempora optio ab?
+            </p>
+          </mj-text>
+
+          <mj-button padding="16px 0" href="https://stenci.la">
+            Button
+          </mj-button>
+
+          <mj-text align="left" padding="0">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              quis iste, praesentium quo ducimus blanditiis, explicabo a
+              magni ipsam quas cumque laudantium eaque voluptas facere
+              incidunt sequi tempora optio ab?
+            </p>
+            <ul>
+              <li>List Item One</li>
+              <li>List Item Two</li>
+              <li>List Item Three</li>
+            </ul>
+
+            <p class="quote notification">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              quis iste, praesentium quo ducimus blanditiis, explicabo a
+              magni ipsam quas cumque laudantium eaque voluptas facere
+              incidunt sequi tempora optio ab?
+            </p>
+          </mj-text>
+
+          <mj-image src="https://marketing-image-production.s3.amazonaws.com/uploads/b6d935ef9f69ddd907b49e405f252a3aacf432d4693c261ec85b3af8d96053da7b49bf01e6ef45d6b27eb5cb25c9604ca34c305504ef54a4262457c3d66b9123.png" alt="Stencila’s Encoda allows lossless conversion between many formats" width="320px" padding="40px 0 16px" fluid-on-mobile="true" />
+
+          <mj-text align="left" padding="0">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              quis iste, praesentium quo ducimus blanditiis, explicabo a
+              magni ipsam quas cumque laudantium eaque voluptas facere
+              incidunt sequi tempora optio ab?
+            </p>
+
+            <p>
+              Best regards,<br />
+              Team Stencila<br />
+              💖
+            </p>
+          </mj-text>
+
+          <mj-divider padding="32px 0" />
+
+          <mj-text align="left" padding="0">
+            <p class="note">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <p class="note code notification" style="text-align: center;">
+              <a href="https://stenci.la" style="text-decoration: none;">https://stenci.la</a>
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="../_partials/transactional/_footer.mjml" />
+  </mj-body>
+</mjml>
