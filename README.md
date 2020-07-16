@@ -1,6 +1,7 @@
 # @stencila/email-templates
 
-These templates are intended to be used for transactional and marketing emails.
+These templates are intended to be used for transactional and marketing
+emails.
 
 They are built using [MJML](https://mjml.io).
 
@@ -21,43 +22,50 @@ To build the templates for use with other services, run:
 
 `npm run build`
 
-## Updating SendGrid
+This will generate two directories inside the `./dist`, one for email
+campaigns for use with Intercom (`./dist/campaigns/`), and one for usage via the Stencila Hub and
+SendGrid (`./dist/transactional/`).
+
+## Updating Intercom marketing templates
 
 First run `npm run build` to generate the templates.
-The following steps will change depending on which type of template you're creating. For:
 
-### Transactional Template
+As part of the build step the `npm run prepare:intercom` will do the
+following:
 
-Navigate to [SendGrid transactional templates](https://sendgrid.com/dynamic_templates/) and follow the [instruction here](https://sendgrid.com/docs/ui/sending-email/create-and-edit-legacy-transactional-templates/#creating-a-template).
+- Add a [`data-premailer="ignore"`
+  attribute](https://www.intercom.com/help/en/articles/245-a-guide-to-creating-html-emails#best-practices-for-using-html-in-intercom)
+  to `<style>` tags to prevent Intercom from inlining them when sending a
+  campaign. This is because we already inline the necessary styles during
+  compilation of this project.
+- There are some styles which need to be
+  inlined, namely the dynamic content from the Intercom email editor, for those
+  we look for the special `/* inline-styles */` comment, and replace it with a
+  simple `<style type="text/css">` tag which will be inlined by Intercom.
 
-> ⚠️ Please make sure to use the **Code Editor** mode as the type of template.
+Navigate to [Intercom email templates
+page](https://app.intercom.com/a/apps/y554dhej/settings/email-templates)
+paste in the contents of the generated `campagins/template-intercom.html`
+file into the editor and save the template.
 
-### Marketing Template
+## Update Hub
 
-Navigate to [SendGrid marketing templates page](https://sendgrid.com/marketing_campaigns/ui/marketing_templates) and follow the [instruction here](https://sendgrid.com/docs/ui/sending-email/working-with-marketing-templates/#creating-a-new-template).
+_To be documented_
 
-> ⚠️ Please make sure to use the **Design Editor** mode as the type of template.
+## Sending Transactional Emails via SendGrid API
 
-You can see the existing templates by changing `Filter By` to `Custom`.
+Transactional Email templates require some [substitution
+tags](https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/#send-a-transactional-email)
+to be defined for the variables to be correctly interpolated.
 
-Once you’re in the template editor, follow the instructions for [Importing HTML into the template](https://sendgrid.com/docs/ui/sending-email/editor/#importing-custom-html-with-drag--drop-markup).
-
-There are a few manual steps which need to be performed after each time HTML is imported:
-
-- Change the `EMAIL BODY` `Background Color` to `#F5F5F5`
-- Change the `EMAIL BODY` `Text Color` to `#363636`
-- Change the `EMAIL BODY` `Link Color` to `inherit`
-- Change the `EMAIL BODY` `Font Size` to `20px`
-- Change the email `CONTENT CONTAINER` width to `640px`
-
-## Sending Emails
-
-Transactional Email templates require some [substitution tags](https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/#send-a-transactional-email) to be defined for the variables to be correctly interpolated.
-
-Each template's requirements can be seen in a `<template-name>-data.json` file.
-Please note that there are some additional requirements for the [transactional footer partial](./src/_partials/transactional/footer-data.json). and the [campaign footer partial](./src/_partials/campaign/footer-data.json).
+Each template's requirements can be seen in a `<template-name>-data.json`
+file. Please note that there are some additional requirements for the
+[transactional footer
+partial](./src/_partials/transactional/footer-data.json). and the [campaign
+footer partial](./src/_partials/campaign/footer-data.json).
 
 ## References
 
-- [MJML Documentation](https://mjml.io/documentation)
-- [SendGrid Editor Documentaiton](https://sendgrid.com/docs/ui/sending-email/editor/)
+- [MJML documentation](https://mjml.io/documentation)
+- [Intercom email template documentation](https://www.intercom.com/help/en/articles/245-a-guide-to-creating-html-emails)
+- [SendGrid Editor documentation](https://sendgrid.com/docs/ui/sending-email/editor/)

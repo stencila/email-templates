@@ -2,15 +2,17 @@
   "name": "@stencila/email-templates",
   "version": "0.1.0",
   "description": "Stencila branded email templates",
-  "main": "src/registration.mjml",
   "scripts": {
-    "prep": "npm run ensureDir && npm run clean",
-    "build": "npm run prep && mjml src/templates/*/**.mjml src/campaigns/*.mjml -o ./dist --config.minify true",
-    "clean": "rimraf ./dist/*",
-    "dev": "npm run prep && mjml -w src/templates/*/** src/campaigns/*.mjml -o ./dist",
-    "ensureDir": "mkdir -p ./dist",
     "start": "npm run dev & npm run watch",
-    "watch": "browser-sync start -s ./dist --directory -f ./dist "
+    "build": "npm run prep && npm run build:campaign && npm run build:transactional",
+    "ensureDir": "mkdir -p ./dist/campaigns && mkdir -p ./dist/transactional",
+    "prep": "npm run clean && npm run ensureDir",
+    "build:campaign": "mjml src/campaigns/*.mjml -o ./dist/campaigns/ --config.minify true --config.fonts '{}' -l strict && npm run prepare:intercom",
+    "build:transactional": "mjml src/transactional/*.mjml src/transactional/**/*.mjml -o ./dist/transactional/ --config.minify true --config.fonts '{}' -l strict",
+    "clean": "rimraf ./dist/*",
+    "dev": "npm run prep && mjml -w src/transactional/*.mjml src/transactional/**/*.mjml src/campaigns/*.mjml -o ./dist --config.minify true -l strict",
+    "watch": "browser-sync start -s ./dist --directory -f ./dist ",
+    "prepare:intercom": "sed -i '' -e 's/<style type=\"text\\/css\">/<style type=\"text\\/css\" data-premailer=\"ignore\">/g' ./dist/campaigns/*.html && sed -i '' -e 's/\\/\\* inline-styles \\*\\//<\\/style>\\\n<style type=\"text\\/css\">/g' ./dist/campaigns/*.html"
   },
   "keywords": [
     "Stencila",
@@ -20,7 +22,7 @@
     "MJML"
   ],
   "repository": "https://github.com/stencila/email-templates",
-  "author": "https://github.com/stencila/style/graphs/contributors",
+  "author": "https://github.com/stencila/email-templates/graphs/contributors",
   "license": "Apache-2.0",
   "devDependencies": {
     "browser-sync": "2.26.7",

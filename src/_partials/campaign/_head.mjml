@@ -1,59 +1,50 @@
-<mj-font name="Nunito" href="https://fonts.googleapis.com/css?family=Nunito" />
-<mj-attributes>
-  <mj-all font-family="Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-all>
-  <mj-text font-weight="400" font-size="20px" color="#363636" line-height="30px" font-family="Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif"></mj-text>
-  <mj-button align="left" font-weight="bold" height="40px" background-color="#2568EF" border-radius="60px" inner-padding="0 16px" text-transform="uppercase" font-size="14px"></mj-button>
-  <mj-table css-class="datatable"></mj-table>
-  <mj-divider padding="0" border-width="1px" border-color="#dbdbdb"></mj-divider>
-</mj-attributes>
+<mj-include path="../_head_common.mjml" />
 
+<!-- These styles are manually duplicated across both `_transactional.mjml` and `_campaign.mjml` -->
+<!-- This allows a post-build step to transform the generated template for Intercom compatibility -->
+<!-- Note that only the `_transactional.mjml` has the `inline="inline"` attribute set. -->
 <mj-style>
-  @media (max-width:480px) {
-  .body__wrapper {
-  padding: 16px;
+  /* inline-styles */
+  p a.intercom-h2b-button,
+  a.intercom-h2b-button,
+  a.intercom-h2b-button:link,
+  a.intercom-h2b-button:visited {
+    background-color: #2568EF;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 
-  .main__content > table > tbody > tr > td {
-  padding: 24px 16px !important;
-  }
-
-  .hero > tbody > tr > td > div > table > tbody > tr > td {
-  padding-top: 8px !important;
-  }
-
-  .m-full-width+.m-full-width {
-  padding-top: 32px;
-  }
-
-  h1 {
-  font-size: 24px !important;
-  }
-
-  h2 {
-  font-size: 20px !important;
-  }
-
-  h3 {
-  font-size: 18px !important;
-  }
-
-  p {
-  font-size: 18px !important;
-  line-height: 1.5;
-  }
-
-  .datatable tr {
-  font-size: 15px !important;
-  }
-
-  }
-</mj-style>
-
-<mj-style inline="inline">
-  p {
-    font-size: 20px;
+  p,
+  li {
+    font-size: 18px;
+    color: #363636;
     line-height: 1.5;
-    font-family: "Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif";
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  p a {
+    color: #363636;
+  }
+
+  p img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  hr {
+    border: none;
+    background-color: #f1f1f2;
+    height: 1px;
+    width: 100%;
   }
 
   h1,
@@ -62,7 +53,8 @@
   h4,
   h5,
   h6 {
-    font-weight: bold;
+    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
     line-height: 125%;
   }
 
@@ -86,14 +78,11 @@
   h6 {
     font-style: normal;
     font-size: 14px;
+    font-weight: 600;
     line-height: 16px;
     letter-spacing: 1px;
     margin: 0;
     text-transform: uppercase;
-  }
-
-  button {
-    letter-spacing: 1px;
   }
 
   code {
@@ -126,7 +115,7 @@
   }
 
   .main__content ul li {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   ul.footer__links {
@@ -134,12 +123,14 @@
   }
 
   .footer h4,
-  .footer__links {
+  .footer__links,
+  .footer__links a {
+    color: #363636;
+    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 1px;
     line-height: 1.75;
-    text-transform: uppercase;
+    text-decoration: none;
   }
 
   .footer__links a {
@@ -152,7 +143,8 @@
     padding: 0;
   }
 
-  .footer p {
+  .footer p,
+  .footer p a {
     font-size: 14px;
     line-height: 1.25;
   }
@@ -191,5 +183,27 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
+  }
+
+  .notification {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 16px;
+  }
+
+  .code {
+    font-family: monospace;
+    font-weight: 400;
+    color: #363636;
+  }
+
+  .quote {
+    border-left: 2px solid #dbdbdb;
+    font-style: italic;
+  }
+
+  .note {
+    font-size: 80%;
+    color: #616161;
   }
 </mj-style>

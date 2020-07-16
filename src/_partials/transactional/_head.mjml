@@ -1,0 +1,209 @@
+<mj-include path="../_head_common.mjml" />
+
+<!-- These styles are manually duplicated across both `_transactional.mjml` and `_campaign.mjml` -->
+<!-- This allows a post-build step to transform the generated template for Intercom compatibility -->
+<!-- Note that only the `_transactional.mjml` has the `inline="inline"` attribute set. -->
+<mj-style inline="inline">
+  /* inline-styles */
+  p a.intercom-h2b-button,
+  a.intercom-h2b-button,
+  a.intercom-h2b-button:link,
+  a.intercom-h2b-button:visited {
+    background-color: #2568EF;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  p,
+  li {
+    font-size: 18px;
+    color: #363636;
+    line-height: 1.5;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  p a {
+    color: #363636;
+  }
+
+  p img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  hr {
+    border: none;
+    background-color: #f1f1f2;
+    height: 1px;
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  code {
+    background-color: #f1f1f2;
+    border-radius: 2px;
+    border: #b5b5b5;
+    font-family: monospace;
+    font-weight: 400;
+    color: #363636;
+    padding: 0 2px;
+  }
+
+  .main__content {
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  a,
+  a:link {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: circle;
+  }
+
+  .main__content ul li {
+    font-size: 18px;
+  }
+
+  ul.footer__links {
+    list-style-type: none;
+  }
+
+  .footer h4,
+  .footer__links,
+  .footer__links a {
+    color: #363636;
+    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.75;
+    text-decoration: none;
+  }
+
+  .footer__links a {
+    text-decoration: none;
+  }
+
+  .footer h4 {
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer p,
+  .footer p a {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .footer h4+p {
+    margin-top: 4px;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  td.datatable {
+    padding: 16px 0 !important;
+  }
+
+  .datatable tr {
+    line-height: 1.5;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .datatable tr td {
+    padding: 8px 0;
+  }
+
+  .CTA_link {
+    border-bottom: 2px solid #1d63f3;
+    padding-bottom: 2px;
+    font-size: 85%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .notification {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 16px;
+  }
+
+  .code {
+    font-family: monospace;
+    font-weight: 400;
+    color: #363636;
+  }
+
+  .quote {
+    border-left: 2px solid #dbdbdb;
+    font-style: italic;
+  }
+
+  .note {
+    font-size: 80%;
+    color: #616161;
+  }
+</mj-style>
