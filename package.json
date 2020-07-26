@@ -28,7 +28,7 @@
   "author": "https://github.com/stencila/email-templates/graphs/contributors",
   "license": "Apache-2.0",
   "devDependencies": {
-    "browser-sync": "2.26.10",
+    "browser-sync": "2.26.12",
     "mjml": "4.6.3",
     "rimraf": "3.0.2"
   }
