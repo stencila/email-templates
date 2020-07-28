@@ -11,40 +11,25 @@
       <mj-section padding="0">
         <mj-column width="100%" padding="0">
           <mj-text align="left" padding="0">
-            <h6>You’re Almost done signing up for</h6>
-            <h1>Next generation of reproducible, living documents.</h1>
+            <h1>New email address added</h1>
           </mj-text>
 
           <mj-text align="left" padding="0">
             <p>
-              Welcome to Stencila {{ user.username }}!
-            </p>
-
-            <p>
-              Please click the button below to finish creating your account, it’s to verify that your email address is correct.
+              Please click the button below to verify this email address and link it to your account.
             </p>
           </mj-text>
 
-          <mj-button padding="24px 0 32px" href="{{ activate_url }}">
+          <mj-button padding="24px 0 0" href="{{ activate_url }}">
             Confirm Email Address
           </mj-button>
 
-          <mj-text align="left" padding="0">
-            <p>
-              Please reach out to us at <a href="mailto:hello@stenci.la">hello@stenci.la</a> if you encounter any problems.
-            </p>
-            <p>
-              We’re excited to have you!</br>
-              Team Stencila<br />
-              💖
-            </p>
-          </mj-text>
-
           <mj-divider padding="32px 0" />
+
 
           <mj-text align="left" padding="0">
             <p class="note">
-              If you’re having trouble with the button above, you can copy and paste the following URL in your browser to complete the sign up process:
+              If you’re having trouble with the link above, you can copy and paste the following URL in your browser:
             </p>
 
             <p class="note code notification" style="text-align: center;">
