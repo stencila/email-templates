@@ -6,7 +6,7 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   publish:
@@ -17,7 +17,11 @@ jobs:
         with:
           node-version: 10
       - run: npm install
-      - run: npm test
+      - run: npm run prep
+      # Only build transactional emails for simplicity.
+      # Campaign templates are manually copy/pasted to Intercom.
+      # Building in CI requires fixes for OS agnostic usage of `sed` command in `npm run prepare:intercom`
+      - run: npm run build:transactional
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}

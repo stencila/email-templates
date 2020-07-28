@@ -1,14 +1,14 @@
 {
   "name": "@stencila/email-templates",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Stencila branded email templates",
   "scripts": {
     "start": "npm run dev & npm run watch",
     "build": "npm run prep && npm run build:campaign && npm run build:transactional",
-    "ensureDir": "mkdir -p ./dist/campaigns && mkdir -p ./dist/transactional",
-    "prep": "npm run clean && npm run ensureDir",
     "build:campaign": "mjml src/campaigns/*.mjml -o ./dist/campaigns/ --config.minify true --config.fonts '{}' -l strict && npm run prepare:intercom",
     "build:transactional": "mjml src/transactional/*.mjml src/transactional/**/*.mjml -o ./dist/transactional/ --config.minify true --config.fonts '{}' -l strict",
+    "ensureDir": "mkdir -p ./dist/campaigns && mkdir -p ./dist/transactional",
+    "prep": "npm run clean && npm run ensureDir",
     "clean": "rimraf ./dist/*",
     "dev": "npm run prep && mjml -w src/transactional/*.mjml src/transactional/**/*.mjml src/campaigns/*.mjml -o ./dist --config.minify true -l strict",
     "watch": "browser-sync start -s ./dist --directory -f ./dist ",
